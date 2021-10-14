@@ -21,18 +21,18 @@
         </style>
     </head>
 <body>
-    <h1>Bhavya Kolluri builds a stack</h1>
+    <h1>Sri Harsha Kikkuri builds a stack</h1>
     <input id="inputElement" type="text"><br><br>
     <div class="flex-container" id="target">
         <div class="stack">row item 1</div>   
         <div class="stack">row item 2</div>  
         <div class="stack">row item 3</div>  
     </div><br>	
-	<p> Press the button to create an new element of type div and then add it to the container.</p>
+	<p> Press the button to create  new element of type div and then add it to the container.</p>
 	<button onclick="makeNewDiv()">Push value</button>
     <button onclick="popItem()">Pop</button>
     <button onclick="zap()">Zap values</button>
-	<button onclick="unique()">Unique</button>
+	
 </body>
 
 <script>
@@ -66,17 +66,6 @@
             }
         }
     }
-    // BONUS
-    function unique(){
-        var stackItems = document.getElementsByClassName("stack")
-		for(var i=0; i<stackItems.length; i++){
-			for(var j=i+1; j<stackItems.length; j++){
-                if(stackItems[i].innerHTML == stackItems[j].innerHTML){
-                    stackItems[j].remove()
-                    j--;i--
-                }
-            }
-		}
-    }
+   
 </script>
 </html>	
